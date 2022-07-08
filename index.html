@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discount Sale Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <img src="./img/img.png" class="img-fluid" id="money-img" alt="">
+      <h1>Sale Price Calculator</h1>
+    </header>
+
+
+    <main>
+      <div class="container">
+
+        <div class="discount-type">
+          <label for="type">Type of discount: </label>
+          <select class="form-select" id="options" aria-label="Default select example">
+            <option selected value="none" disabled></option>
+            <option value="Price discount">Price discount</option>
+            <option value="Percentage discount">Percentage discount</option>
+            <option value="10%">10%</option>
+            <option value="20%">20%</option>
+            <option value="50%">50%</option>
+          </select>
+        </div>
+
+        <div class="discount-calculate">
+          <div >
+            <label>Original price:</label>
+            <input type="text" id="input-price" pattern="\d*" maxlength="15">
+          </div>
+          <div>
+            <label id="label-discount">Discount</label>
+            <input type="text" id="input-discount" pattern="\d*" maxlength="3">
+          </div>
+        </div>
+      </div>
+      <p class="error"></p>
+      <button class="btn btn-dark" id="btn-calculate">Calculate</button>
+
+    
+        <div class="result-container">
+          <p>You will pay <strong id="sum-after"></strong>$ instead of <strong id="sum-before"> </strong>$</p>
+          <p>You will save <strong id="save"></strong>$, that is <strong id="percent-discount"></strong>%</p>
+        </div>
+
+
+    </main>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

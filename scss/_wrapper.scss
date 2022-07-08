@@ -1,0 +1,89 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 0px;
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0 10px;
+
+        #money-img {
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 2px -2px black;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .container {
+            .discount-calculate {
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            label {
+                font-weight: bold;
+                margin-left: 5px;
+            }
+
+            select,
+            input {
+                margin-bottom: 15px;
+                border: 1px solid gray;
+                padding: 5px 10px;
+            }
+
+            .form-select {
+                border-radius: 0px;
+            }
+
+        }
+
+        .error {
+            font-size: 13px;
+            margin: 0px;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 10px;
+            width: 150px;
+        }
+
+        .result-container {
+            margin-top: 30px;
+            visibility: hidden;
+
+            p {
+                margin: 0;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+    }
+
+    :disabled {
+        background-color: #d0f2f8;
+        color: black;
+    }
+
+}

@@ -1,0 +1,38 @@
+@media (min-width: 576px) {
+    .wrapper {
+        height: 100vh;
+        header {
+            #money-img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        header {
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        main {
+            .container {
+                margin-top: 10px;
+
+                select,
+                input {
+                    margin-bottom: 25px;
+                    width: 400px;
+                }
+            }
+
+            .result-container {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
